@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+:root{
+    --cor-background: #FAF3E5;
+    --green700: #2C3E3D;
+    --green600: #4C7263;
+    --green300: #A2A2A2;
+    --bege: #F9F0DE;
+    --green900: #222836;
+    --not-black: #171717;
+}
+
+.tamanhopc{
+    height: 100vh;
+}
+
+/*Header*/
+header{
+    width: 100%;
+    height: 17vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 100;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+nav ul {
+    font-size: 1.2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li.logo {
+    margin: 0 auto;
+}
+
+nav ul li.logo img {
+    width: 120px;
+    height: auto;
+    margin-top: 16px;    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+/*Principal*/
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-background);
+}
+
+.home {
+    width: 100%;
+
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: -10px 11px 10px rgba(0, 0, 0, 0.6);
+    font-family: "Montserrat", sans-serif;
+}
+
+.produtos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.produtos h2{
+    width: 80%;
+    font-size: 2rem;
+    color: var(--green600);
+    margin-top: 3vh;
+}
+
+.container-produtos{
+    width: 80%;
+    height: 40vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--green600);
+    align-items: center;
+    justify-content: center;
+}
+
+.box-produtos{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--cor-background);
+    gap: 2vw;
+}
+
+.btn-vermais{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--green700);
+    border: none;
+    color: var(--bege);
+    cursor: pointer;
+}
+
+content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-produto{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+
+}
+
+
+/*Footer*/
+footer {
+    background: #FAF3E5;
+}
+ 
+.footer-box {
+    background: var(--green600);
+    border-radius: 20px;
+    max-width: 1300px;
+    padding: 50px 40px 30px 40px;
+    margin: 0 auto;
+}
+ 
+.footer-box > .content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+ 
+.aptus {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.aptus > h2 {
+    margin: 0 auto;
+    color: var(--bg);
+    font-size: 26px;
+}
+ 
+.aptus > img {
+    width: 220px;
+    height: 220px;
+}
+ 
+.paginas span,
+.suporte span,
+.redes span {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--bg);
+}
+ 
+.paginas p,
+.suporte p,
+.redes p {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--bg);
+    margin-top: 15px;
+}
+ 
+.footer-box {
+    margin-bottom: 30px;
+}
+ 
+.footer-box > .line {
+    border: 1px solid var(--bg);
+    max-width: 1200px;
+    margin: 20px auto;
+}
+ 
+.footer-box > .description {
+    display: flex;
+    color: var(--bg);
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
