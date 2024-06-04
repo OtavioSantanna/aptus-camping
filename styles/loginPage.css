@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+body
+{
+    width: 100%;
+    height: 100vh;
+}
+
+header
+{
+    display: flex;
+    height: 10%;
+    background-color: #2C3E3D;
+}
+
+main
+{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login
+{
+    background-color: #2C3E3D;
+    width: 35%;
+    height: auto;
+    border-radius: 15px;
+}
+.login:active
+{
+    border: 0;
+}
+
+.cadastro
+{
+    background-color: #2C3E3D;
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.logo
+{
+    width: 294px;
+    height: 221px;
+}
+
+.inputlogin
+{
+    width: 80%;
+    background-color: #4C7263;
+    height: 50px;
+    border-radius: 15px;
+    border: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: bolder;
+}
+
+.inputlogin::placeholder
+{
+    color: #F9F0DE;
+}
+
+.inputsenha::placeholder
+{
+    color: #F9F0DE;
+}
+
+.inputsenha
+{
+    width: 80%;
+    height: 50px;
+    background-color: #4C7263;
+    border-radius: 15px;
+    border: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: bolder;
+}
+
+.jasou
+{
+    color: #F9F0DE;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: bolder;
+}
+
+.entrar
+{
+    background-color: #4C7263;
+    color: #F9F0DE;
+    border-radius: 15px;
+    width: 140px;
+    height: 65px;
+    border: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: bolder;
+    
+}
+
+.criarminha
+{
+    background-color: #4C7263;
+    color: #F9F0DE;
+    border-radius: 15px;
+    width: 80%;
+    height: 50px;
+    border: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+
+.linha
+{
+    width: 2px;
+    height: 260px;
+    background-color: #2C3E3D;
+}
+
+.invisivel
+{
+    display: none;
+}
+
+@media (max-width: 1166px) {
+    .criarminha 
+    {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 877px) {
+    .criarminha 
+    {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 768px) {
+    .linha
+    {
+        width: 260px;
+        height: 2px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .login
+    {
+        width: 80%;
+        margin-top: 50px;
+    }
+    .cadastro
+    {
+    width: 80%;
+    
+    }
+    .criarminha
+    {
+        margin-bottom: 30px;
+    }
+    .invisivel
+    {
+        display: flex;
+        width: 100%;
+        height: 100px;
+    }
+  }
