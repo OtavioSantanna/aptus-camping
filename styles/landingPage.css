@@ -132,6 +132,7 @@ main {
     height: 90%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .box-header{
@@ -156,20 +157,39 @@ main {
 }
 
 content{
-    width: 100%;
-    height: 80%;
+    width: 80%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    grid-gap: 30px;
     align-items: center;
+    justify-content: center;
 }
 
 .card-produto{
-    width: 20%;
+    width: 100%;
     height: 100%;
     display: flex;
-    margin-top: 10px;
+    position: relative;
     justify-content: center;
+    align-items: center;
 
+}
+
+.card-produto p{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+.card-produto img{
+    width: 80%;
 }
 
 
