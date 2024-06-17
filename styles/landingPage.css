@@ -195,7 +195,8 @@ content{
 
 /*Footer*/
 footer {
-    background: #FAF3E5;
+    margin-top: 10vh;
+    background: var(--green600);
 }
  
 .footer-box {
