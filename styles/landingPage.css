@@ -71,6 +71,48 @@ nav ul li a {
     transition: transform 0.5s ease; 
 }
 
+/*nav celular*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--green600);
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+
+    }
+}
+@media (max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media (min-width: 801px) {
+    .hideOnPc {
+        display: none;
+    }
+}
+
+
 
 /*Principal*/
 main {
