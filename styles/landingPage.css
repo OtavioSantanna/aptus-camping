@@ -78,6 +78,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: var(--cor-background);
+    align-items: center;
 }
 
 .home {
@@ -264,4 +265,41 @@ footer {
     font-weight: 500;
     align-items: center;
     justify-content: center;
+}
+
+/*Sobre*/
+.sobre{
+    width: 80%;
+    height: 80vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    background-color: yellow;
+}
+
+.textoSobre{
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.textoSobre p{
+    font-size: 1.4rem;
+}
+
+.asideSobre{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoSobre{
+    width: 100%;
 }
