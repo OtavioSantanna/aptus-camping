@@ -308,10 +308,6 @@ footer {
     margin-top: 15px;
 }
  
-.footer-box {
-    margin-bottom: 30px;
-}
- 
 .footer-box > .line {
     border: 1px solid var(--bg);
     max-width: 1200px;

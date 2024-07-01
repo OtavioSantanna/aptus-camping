@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+:root{
+    --cor-background: #FAF3E5;
+    --green700: #2C3E3D;
+    --green600: #4C7263;
+    --green300: #A2A2A2;
+    --bege: #F9F0DE;
+    --green900: #222836;
+    --not-black: #171717;
+}
+
+/*Header*/
+header{
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 100;
+    background-color: var(--green700);
+}
+
+nav ul {
+    font-size: 1.2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li.logo {
+    margin: 0 auto;
+}
+
+nav ul li.logo img {
+    width: 120px;
+    height: auto;
+    margin-top: 16px;    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.5s ease; 
+}
+
+/*nav celular*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--green600);
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+
+    }
+    header{
+        height: 10vh;
+    }
+    nav ul li.logo img{
+        width: 100px;
+    }
+
+}
+@media (max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media (min-width: 801px) {
+    .hideOnPc {
+        display: none;
+    }
+}
+
+
+@media (max-width: 590px) {
+    .home {
+        min-height: 100vh;
+    }
+}
+
+
+/*Main*/
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 17vh;
+    flex-direction: row;
+    
+}
