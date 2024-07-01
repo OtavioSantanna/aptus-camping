@@ -1,8 +1,11 @@
-/* Importação das fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
 
-/* Estilos globais para o corpo */
+
+*{
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
 body {
     padding: 0px;
     margin: 0px;
