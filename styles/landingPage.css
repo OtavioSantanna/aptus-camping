@@ -129,6 +129,7 @@ main {
     flex-direction: column;
     background-color: var(--cor-background);
     align-items: center;
+    position: relative;
 }
 
 .home {
